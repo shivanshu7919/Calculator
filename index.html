@@ -14,33 +14,33 @@
         </div>
         <div class="buttons">
             <div class="buttons-in-rows row1">
-                <button>AC</button>
-                <button>Del</button>
-                <button>%</button>
-                <button>+</button>
+                <button onclick="clearInput()">AC</button>
+                <button onclick="deleteExpression()">Del</button>
+                <button onclick="getExpression('%')">%</button>
+                <button onclick="getExpression('+')">+</button>
             </div>
             <div class="buttons-in-rows row2">
-                <button>9</button>
-                <button>8</button>
-                <button>7</button>
-                <button>-</button>
+                <button onclick="getExpression('9')">9</button>
+                <button onclick="getExpression('8')">8</button>
+                <button onclick="getExpression('7')">7</button>
+                <button onclick="getExpression('-')">-</button>
             </div>
             <div class="buttons-in-rows row3">
-                <button>6</button>
-                <button>5</button>
-                <button>4</button>
-                <button>*</button>
+                <button onclick="getExpression('6')">6</button>
+                <button onclick="getExpression('5')">5</button>
+                <button onclick="getExpression('4')">4</button>
+                <button onclick="getExpression('*')">x</button>
             </div>
             <div class="buttons-in-rows row4">
-                <button>3</button>
-                <button>2</button>
-                <button>1</button>
-                <button>/</button>
+                <button onclick="getExpression('3')">3</button>
+                <button onclick="getExpression('2')">2</button>
+                <button onclick="getExpression('1')">1</button>
+                <button onclick="getExpression('/')">/</button>
             </div>
             <div class="buttons-in-rows row5">
-                <button>=</button>
-                <button>.</button>
-                <button>0</button>
+                <button onclick="getExpression('0')">0</button>
+                <button onclick="getExpression('.')">.</button>
+                <button onclick="calculate()">=</button>
             </div>
         </div>
     </div>
