@@ -8,11 +8,13 @@ function getExpression(num){
 }
 
 function calculate(){
-    input.value=eval(expression);
-    expression='';
+    if(expression){
+        input.value=eval(expression);
+        expression=input.value;
+    } 
 }
 
-function deleteExpression(){
+function backspace(){
     expression=expression.slice(0,-1);
     input.value=expression;
 }
