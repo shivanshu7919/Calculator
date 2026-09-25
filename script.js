@@ -22,7 +22,7 @@ function clearInput(){
 
 buttons.forEach(button => {
     button.addEventListener('click',(event)=>{
-        const buttonText=event.target.textContent;
+        let buttonText=event.target.textContent;
         if(buttonText==='='){
             calculate();
         }
@@ -33,6 +33,9 @@ buttons.forEach(button => {
             clearInput();
         }
         else{
+            if(buttonText==='x'){
+                buttonText='*';
+            }
             expression+=buttonText;
             input.value=expression;
         }
