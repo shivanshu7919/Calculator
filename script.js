@@ -42,4 +42,20 @@ buttons.forEach(button => {
     });
 });
 
-
+document.addEventListener('keydown',(event)=>{
+    if(event.key>='0' && event.key<='9'){
+        expression+=event.key;
+        input.value=expression;
+    }
+    else if(event.key=='+' || event.key=='-' || event.key=='*' || event.key=='\\' || event.key=='%' || event.key=='.'){
+        expression+=event.key;
+        input.value=expression;     
+    }
+    else if(event.key=='Enter'){
+        calculate();
+    }
+    else if(event.key=='Backspace'){
+        backspace();
+    }
+    
+});
